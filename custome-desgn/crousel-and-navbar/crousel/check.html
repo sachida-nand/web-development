@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="radio" name="ss" id="sss" >
+        <input type="radio" name="ss" id="ss" >
+    </form>
+    <p id="p"></p>
+
+    <script>
+        var mm = document.querySelector('#sss');
+        var m = document.querySelector('#ss');
+
+    var node = document.createElement("div");
+    var textnode = document.createTextNode("sachida");
+    node.appendChild(textnode);
+
+        mm.addEventListener('change', function(){
+            document.getElementById("p").appendChild(node);
+            // document.querySelector('.p').append(`<div class="x">sachida</div>`)
+        })
+
+        m.addEventListener('change', function(){
+            document.querySelector('#p').removeChild(node)
+        })
+
+
+        // if(mm == true){
+        //     console.log('dfdfgdgd');
+        // }
+    </script>
+</body>
+</html>

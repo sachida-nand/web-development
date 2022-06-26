@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="add.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="top-nav">
+            <div class="logo">
+                <a href="" class="logo"><img src="img/logo-removebg-preview.png" alt=""></a>
+            </div>
+            <form action="" class="nav-form">
+                <input type="text" name="" id="" placeholder="Search...">
+                <button type="search"><i class="fas fa-search"></i> <span class="search"> search</span></button>
+            </form>
+            <div class="top-nav-items d-flex">
+                <a class="item" href="">Signin</a>
+                <div class="chart">
+                    <a class="item" href=""><i class="fas fa-cart-plus"></i> Chart</a>
+                    <small class="chart_number">2</small>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="second-nav">
+        <ul>
+            <li class="nav-items"><a href="">Home</a></li>
+            <li class="nav-items"><a href="">About</a></li>
+            <li class="nav-items"><a href="">Contact Us</a></li>
+            <li class="nav-items"><a href="">Your order</a></li>
+        </ul>
+    </nav>
+
+    <div class="card_container container-flui">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <div class="cart_items">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card_img ">
+                                    <img src="img/1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="description">
+                                    <a href=""><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestiae.</h1></a>
+                                    <p>
+                                        <span class="selling_price">&#8377; <span
+                                                class="selling_pricee">20000.00</span></span>
+                                        <span class="market_price">&#8377; 25000.00</span>
+                                        <span class="discount_amount">(80% off)</span>
+                                    </p>
+                                    <div class="available">
+                                        <p><b>Availability:</b> <span>In stock</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_details details_price">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2">
+
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="Quantity text-center">
+                                    <div class="quantity_input">
+                                        <!-- <p><b>Quantity</b></p> -->
+                                        <span class="decrease">-</span> <input type="number" value="1"
+                                            class="quenty_value" /><span class="increase">
+                                            +</span>
+                                    </div>
+                                    <div class="sub_total">
+                                        <!-- <p><b>Sub total</b></p> -->
+                                        <p id="sub_total"> <i class="fas fa-trash"></i> <span> Remove</span></p>
+                                        <!-- <input type="text" id="sub_total" readonly value="1900000.00"> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart_items">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card_img ">
+                                    <img src="img/1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="description">
+                                    <a href=""><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestiae.</h1></a>
+                                    <p>
+                                        <span class="selling_price">&#8377; <span
+                                                class="selling_pricee">20000.00</span></span>
+                                        <span class="market_price">&#8377; 25000.00</span>
+                                        <span class="discount_amount">(80% off)</span>
+                                    </p>
+                                    <div class="available">
+                                        <p><b>Availability:</b> <span>In stock</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_details details_price">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2">
+
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="Quantity text-center">
+                                    <div class="quantity_input">
+                                        <!-- <p><b>Quantity</b></p> -->
+                                        <span class="decrease">-</span> <input type="number" value="1"
+                                            class="quenty_value" /><span class="increase">
+                                            +</span>
+                                    </div>
+                                    <div class="sub_total">
+                                        <!-- <p><b>Sub total</b></p> -->
+                                        <p id="sub_total"> <i class="fas fa-trash"></i> <span> Remove</span></p>
+                                        <!-- <input type="text" id="sub_total" readonly value="1900000.00"> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart_items">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card_img ">
+                                    <img src="img/1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="description">
+                                    <a href=""><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestiae.</h1></a>
+                                    <p>
+                                        <span class="selling_price">&#8377; <span
+                                                class="selling_pricee">20000.00</span></span>
+                                        <span class="market_price">&#8377; 25000.00</span>
+                                        <span class="discount_amount">(80% off)</span>
+                                    </p>
+                                    <div class="available">
+                                        <p><b>Availability:</b> <span>In stock</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_details details_price">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2">
+
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="Quantity text-center">
+                                    <div class="quantity_input">
+                                        <!-- <p><b>Quantity</b></p> -->
+                                        <span class="decrease">-</span> <input type="number" value="1"
+                                            class="quenty_value" /><span class="increase">
+                                            +</span>
+                                    </div>
+                                    <div class="sub_total">
+                                        <!-- <p><b>Sub total</b></p> -->
+                                        <p id="sub_total"> <i class="fas fa-trash"></i> <span> Remove</span></p>
+                                        <!-- <input type="text" id="sub_total" readonly value="1900000.00"> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="price_details">
+                    <div class="card">
+                        <div class="price_heading">
+                            <h4>PRICE DETAILS</h4>
+                        </div><hr>
+                        <div class="items">
+                            <div class="d-flex justify-content-between">
+                                <p>Price (1 items)</p>
+                                <span>&#8377; 200000.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Discount</p>
+                                <span class="text">- &#8377; 200000.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Delivery Charges</p>
+                                <span>- &#8377; 200000.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <p><b>Total Amount</b></p>
+                                <span><b>&#8377; 200000.00</b></span>
+                            </div><hr>
+                            <span class="text">You will save ₹998 on this order</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="options my-4">
+                    <div class="row">
+                        <div class="col-1">
+                           <img src="img/shield.png" alt="">
+                        </div>
+                        <div class="col-11">
+                          <p>Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="zoom/zoomsl.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

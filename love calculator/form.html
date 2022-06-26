@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           background-color: #ffffff;
+           padding:0 20px 20px;
+           border-radius: 5px;
+           width: 50%;
+           text-align: center;
+           box-shadow:5px 10px 15px #000000;
+        }
+
+        .container h1{
+            text-align: center;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .container .form-class input{
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid blue;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+
+        .label{
+            text-align: left;
+            margin-left: 25px;
+        }
+
+        .container .btn{
+            background-color: red;
+            padding: 8px 8px;
+            width: 85%;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 400;
+
+        }
+
+        .container .btn:hover{
+            background-color: green; 
+        }
+
+        .error_msg{
+            background-color: #ff0000;
+            padding: 10px;
+            margin-bottom: 20px;
+            opacity: 0.5;
+            font-size: 15px;
+            font-weight: 600;
+            color: #000000;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <p id="error_msg"></p>
+       <form action="msg.php" onsubmit="return validation()">
+        <div class="label"><label for="">Name:</label></div>
+        <div class="form-class">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-class">
+            <input type="text" name="password" id="pass" placeholder="Enter a password">
+        </div>
+        <div class="form-class">
+            <button class="btn">Submit</button>
+        </div> 
+       </form>  
+    </div>
+
+    <script>
+        function validation(){
+            var name = document.getElementById("name").value;
+            var pass = document.getElementById("pass").value;
+            var error_msg = document.getElementById("error_msg");
+            var text = "";
+            error_msg.classList.add("error_msg");
+
+            if(name.length < 5 ){    
+                error_msg.innerText = "Name field is required";
+               return false;
+            }
+            if(!isNaN(name)){
+                error_msg.innerText = "Name can not be number";
+               return false;
+            }
+
+            if(pass.length <6){
+                error_msg.innerText = "Pass not less then 6 character";
+               return false;
+            }
+            return true    
+        }
+
+        // validation();
+
+    </script>
+</body>
+</html>

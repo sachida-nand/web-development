@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="account.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="top-nav">
+            <div class="logo">
+                <a href="" class="logo"><img src="img/logo-removebg-preview.png" alt=""></a>
+            </div>
+            <form action="" class="nav-form">
+                <input type="text" name="" id="" placeholder="Search...">
+                <button type="search"><i class="fas fa-search"></i> <span class="search"> search</span></button>
+            </form>
+            <div class="top-nav-items">
+                <div class="item">
+                    <a href="">sdfsfsdd</a>
+                    <span id="sign">Signin <i class="fas fa-caret-down"></i>
+                        <ul class="submenu">
+                            <li><a href="">Your Account</a></li>
+                            <li><a href="">Your Order</a> </li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="chart item">
+                    <a class="" href=""><i class="fas fa-cart-plus"></i> Chart</a>
+                    <small class="chart_number">2</small>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="second-nav">
+        <ul>
+            <li class="nav-items"><a href="">Home</a></li>
+            <li class="nav-items"><a href="">All Catagorie</a></li>
+            <li class="nav-items"><a href="">All Brands</a></li>
+            <li class="nav-items"><a href="">Coupons</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                <li class="breadcrumb-item"><a href="#">Login & Security</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Change Password</li>
+            </ol>
+        </nav>
+        <div class="heading">
+            <h2>Change Your Name</h2>
+            <div class="addresses_form">
+                <div class="card">
+                    <form action="">
+                        <div class="add_new_section">
+                            <p>If you want to change the name associated with your UEE account, you may do so below. Be
+                                sure to click the Save Changes button when you are done.</p>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="name">Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name"
+                                        required>
+                                </div>
+                                <button class="btn btn-primary">Save Change</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="heading">
+            <h2>Change your email address</h2>
+            <div class="addresses_form">
+                <div class="card">
+                    <form action="">
+                        <div class="add_new_section">
+                            <p>Current email address: vickysharma.m82@gmail.com</p>
+                            <p>Enter the new email address you would like to associate with your account below. We will
+                                send a One Time Password (OTP) to that address.</p>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="email">Email <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Email"
+                                        required>
+                                </div>
+                                <button class="btn btn-primary">Save Change</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2>Change Mobile Number</h2>
+            <div class="addresses_form">
+                <div class="card">
+                    <form action="">
+                        <div class="add_new_section">
+                            <p>Old mobile number: 7700871679</p>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="mobile">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="number" class="form-control" name="mobile" id="name"
+                                        placeholder="mobile" required>
+                                </div>
+                                <button class="btn btn-primary">Save Change</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="heading">
+            <h2>Change Password</h2>
+            <div class="addresses_form">
+                <div class="card">
+                    <form action="">
+                        <div class="add_new_section">
+                            <p>Use the form below to change the password for your UEE account</p>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="old_password">Old Password <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="old_password" id="old_password"
+                                        placeholder="Old password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new_password">New Password <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="new_password" id="new_password"
+                                        placeholder="New password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_password">Confirm new password <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="confirm_password"
+                                        id="confirm_password" placeholder="Confirm password" required>
+                                </div>
+                                <button class="btn btn-primary">Save Change</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="before-footer">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 f-b-item">
+                    <div>
+                        <img src="icons-payment.png" alt="">
+                    </div>
+                    <div>
+                        <p>Secure Payment</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 f-b-item">
+                    <div>
+                        <img src="icons-delivery.png" alt="">
+                    </div>
+                    <div>
+                        <p>On time delivey</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 f-b-item">
+                    <div>
+                        <img src="icons-customer-service.png" alt="">
+                    </div>
+                    <div>
+                        <p>Excellent Customer Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

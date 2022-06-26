@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="form">
+            <h1>Form validation</h1>
+            <form action="validation.php" class="form" id="form" method="post">
+                <div class="form-control success">
+                    <label for="name">Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <i class="far fa-check-circle" ></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error massage</small>
+                </div>
+                <div class="form-control error">
+                    <label for="email">Email : </label>
+                    <input type="text" name="email" id="email" placeholder="Enter your name">
+                    <i class="far fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error massage</small>
+                </div>
+                <div class="form-control">
+                    <label for="phone">Phone : </label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone">
+                    <i class="far fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error massage</small>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>

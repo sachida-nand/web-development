@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="add.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="top-nav">
+            <div class="logo">
+                <a href="" class="logo"><img src="img/logo-removebg-preview.png" alt=""></a>
+            </div>
+            <form action="" class="nav-form">
+                <input type="text" name="" id="" placeholder="Search...">
+                <button type="search"><i class="fas fa-search"></i> <span class="search"> search</span></button>
+            </form>
+            <div class="top-nav-items d-flex">
+                <a class="item" href="">Signin</a>
+                <div class="chart">
+                    <a class="item" href=""><i class="fas fa-cart-plus"></i> Chart</a>
+                    <small class="chart_number">2</small>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="second-nav">
+        <ul>
+            <li class="nav-items"><a href="">Home</a></li>
+            <li class="nav-items"><a href="">About</a></li>
+            <li class="nav-items"><a href="">Contact Us</a></li>
+            <li class="nav-items"><a href="">Your order</a></li>
+        </ul>
+    </nav>
+ 
+    <div class="card_container">
+        <div class="row">
+            <div class="col-lg-8 col-sm 12">
+               <h4>Checkout</h4>
+               <div class="card">
+                <div class="oder_preview">
+                    <div class="header">
+                        <h5>Shipping Details</h5>
+                    </div>
+                    <hr>
+                <div class="error alert-warning" role="alert">
+                
+                </div>
+                <form action="" method="post">
+                <div class="shipment_address">
+                    <div class="address_item my-3">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="radio-button text-center">
+                                    <input type="radio" name="address" id="address" onchange="hideAddNewAddressFrom('address')" required>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="name_phone">
+                                    <label for="address">
+                                        <p>Sachida nand Ray<span>Work</span> 7700871679</p>
+                                        <small>New boys hostel, room no-59, kalinga university kotini, new raipur, new raipur,
+                                            chatisgarh -
+                                            492001</small>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address_item my-3">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="radio-button text-center">
+                                    <input type="radio" name="address" id="address2" onchange="hideAddNewAddressFrom('address2')" required>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="name_phone">
+                                    <label for="address2">
+                                        <p>Sachida nand Ray<span>Work</span> 7700871679</p>
+                                        <small>New boys hostel, room no-59, kalinga university kotini, new raipur, new raipur,
+                                            chatisgarh -
+                                            492001</small>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-lg-3">
+                            <p class="mb-3">OR</p>
+                            <label for="addnewaddressinput" id="add_new_address" class="btn btn-primary mb-3">+ Add New Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment_details">
+                    <div class="header">
+                        <h5>Payment Method</h5>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" onclick="showHidePaymentOption('khalti')" name="payment"
+                            id="khalti" required>
+                        <label class="form-check-label" for="khalti">
+                            Khalti
+                        </label>
+                        <div class="payment_method khalti">
+                            <button class="btn btn-warning">Pay By Khalti</button>
+                        </div>
+                    </div>
+                
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" onclick="showHidePaymentOption('eSewa')" name="payment" id="eSewa"
+                            required>
+                        <label class="form-check-label" for="eSewa">
+                            eSewa
+                        </label>
+                        <div class="payment_method eSewa">
+                            <button id="" class="btn btn-warning">Pay By eSewa</button>
+                        </div>
+                    </div>
+                
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" onclick="showHidePaymentOption('cod')" name="payment" id="cod"
+                            required>
+                        <label class="form-check-label" for="cod">
+                            Cash On Delivery (COD)
+                        </label>
+                        <div class="payment_method cod">
+                            <button id="COD" class="btn btn-warning">Confirm Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="add_new">
+                    <div class="header">
+                        <div class="radio-button ad text-center">
+                            &nbsp;&nbsp; <input type="radio" name="address" id="addnewaddressinput" required>&nbsp;&nbsp; <b>Add New Address</b>
+                        </div>
+                    </div><hr>
+                </div>
+                </form>
+                <form action="">
+                    <div class="add_new_adress">
+                        <div class="mt-3 pt-4 add_new_form_section">
+                            
+                        </div>
+                        <div class="new_add_button mt-4 pb-4">
+                            <button class="btn btn-warning savee">SAVE AND CONTINUE</button>
+                            <span href="javascript:void()" id="Cancel" class="btn btn-danger">Cancel</span>
+                        </div>
+                    </div>
+                </form>
+               </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="price_details">
+                    <div class="card">
+                        <div class="price_heading">
+                            <h4>PRICE DETAILS</h4>
+                        </div>
+                        <hr>
+                        <div class="items">
+                            <div class="d-flex justify-content-between">
+                                <p>Price (1 items)</p>
+                                <span>&#8377; 200000.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Discount</p>
+                                <span class="text">- &#8377; 200000.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Delivery Charges</p>
+                                <span>- &#8377; 200000.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <p><b>Total Amount</b></p>
+                                <span><b>&#8377; 200000.00</b></span>
+                            </div>
+                            <hr>
+                            <span class="text">You will save ₹998 on this order</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="options my-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="img/shield.png" alt="">
+                        </div>
+                        <div class="col-11">
+                            <p>Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="checkout.js"></script>
+
+    <script>
+         $('#addnewaddressinput').on('change')
+    </script>
+</body>
+</html>

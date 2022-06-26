@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            color: aliceblue;
+        }
+
+        .container{
+              border: 5px solid green;           
+              padding: 20px;
+              border-radius: 20px 5px ;
+              text-align: center;
+        }
+
+        .container input{
+            border: 1px solid yellowgreen;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+            height: 100%;
+        }
+
+        .container input::placeholder{
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        .container label{
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .container button{
+            padding: 5px;
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 3px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .container button:hover{
+            background-color: cadetblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Love Calculator</h1><hr>
+            <div class="form">
+                <label for="name">Enter your name:</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div> 
+            <div class="form">
+                <label for="partner">Enter Another Name:</label>
+                <input type="text" placeholder="Enter Another name" required>
+            </div>
+            <h1 id="score"></h1>
+            <button class="btn" onclick="score()" type="button">Click to Check</button>
+        </form>
+    </div>
+
+    <script>
+        
+
+        function score(){
+            var scores = document.getElementById("score");
+            var loveScore = Math.random() * 100;
+            loveScore = Math.floor(loveScore) + 1;
+           
+            scores.innerHTML = "Your Love Score is "+loveScore +"%";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.crousel{
+   height: 100vh;
+   overflow: hidden;
+   position: relative;
+}
+
+.crousel .slide{
+  /* background-image: url("https://ipivs.com/wp-content/uploads/2018/08/video-recording-system-for-meetings-and-presentations.jpg"); */
+  background-color: #2c1212;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+  padding: 0 15px;
+  animation: slide 1s ease-in;
+}
+
+.crousel .slide.active{
+  display: flex;
+}
+
+@keyframes slide{
+    0%{
+      opacity: .3;
+      transform: scale(1);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+.container{
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  padding: 100px;
+}
+
+.content{
+  /* position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  padding-bottom: 50px;
+  padding-top: 50px;
+  /* margin-top: 100px; */
+  /* animation: content 2s ease; */
+}
+
+.content h1{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px rgb(0 0 0 / 50%);
+}
+
+.content p{
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 0px 0px 3px rgb(0 0 0 / 50%);
+  margin-bottom: 25px;
+}
+
+.btn{
+  background: red;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.crousel .slide.active .content {
+  opacity:0;
+	animation: content .8s ease forwards;
+	animation-delay:1s;
+}
+
+/* .crousel .slide.active .content p{
+  opacity:0;
+	animation: content .8s ease forwards;
+	animation-delay:1s;
+}
+
+.crousel .slide.active .content a{
+  opacity:0;
+	animation: content .8s ease forwards;
+	animation-delay:1s;
+} */
+
+@keyframes content{
+    0%{
+    opacity:0;
+		transform: translatey(100px);
+	}
+  25%{
+    opacity:1;
+	 transform: translatex(0px);
+  }
+  50%{
+    opacity:1;
+	 transform: translatey(25px);
+  }
+  75%{
+    opacity:1;
+	  transform: translatey(0px);
+  }
+	100%{
+	 opacity:1;
+	 transform: translatey(25px);	
+	}
+}
+
+
+.crousel .controls .prev,
+.crousel .controls .next{
+ position: absolute;
+ z-index:999;
+ top:40%;
+ /* height:40px;
+ width: 40px; */
+ margin-top: -20px;
+ color:#441919;
+ text-align: center;
+ line-height: 40px;
+ font-size:60px;
+ cursor:pointer;
+ transition: all .5s ease;
+}
+.crousel .controls .prev:hover,
+.crousel .controls .next:hover{
+	color: #860808;
+}
+.crousel .controls .prev{
+ left:10px;
+}
+.crousel .controls .next{
+ right:10px;
+}
+

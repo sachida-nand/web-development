@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form</h1>
+        <form action="action.php" id="form" onsubmit="return validation()">
+          <div><label for="Name">Name : </label></div>
+          <div><input type="text" name="name" id="Name" placeholder="Enter your name" autocomplete="off"></div>
+          <p id="name_error"></p>
+         <div class="form-control">
+            <div><label for="pass">Password</label></div>
+            <div><input type="password" name="pass" id="pass" placeholder="enter a password" autocomplete="off">
+              <i id="toggle" class="fas fa-eye"></i></div>
+         </div>
+          <p id="pass_error"></p>
+         <div>
+            <button class="btn">Submit</button>
+         </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- <script src="date.js"></script> -->
+
+</body>
+</html>

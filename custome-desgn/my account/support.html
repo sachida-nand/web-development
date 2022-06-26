@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="account.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="top-nav">
+            <div class="logo">
+                <a href="" class="logo"><img src="img/logo-removebg-preview.png" alt=""></a>
+            </div>
+            <form action="" class="nav-form">
+                <input type="text" name="" id="" placeholder="Search...">
+                <button type="search"><i class="fas fa-search"></i> <span class="search"> search</span></button>
+            </form>
+            <div class="top-nav-items">
+                <div class="item">
+                    <span id="sign">Signin <i class="fas fa-caret-down"></i>
+                        <ul class="submenu">
+                            <li><a href="">Your Account</a></li>
+                            <li><a href="">Your Order</a> </li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="chart item">
+                    <a class="" href=""><i class="fas fa-cart-plus"></i> Chart</a>
+                    <small class="chart_number">2</small>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="second-nav">
+        <ul>
+            <li class="nav-items"><a href="">Home</a></li>
+            <li class="nav-items"><a href="">All Catagorie</a></li>
+            <li class="nav-items"><a href="">All Brands</a></li>
+            <li class="nav-items"><a href="">Coupons</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h2>Support Ticket</h2>
+        </div>
+        <div class="add-ticket text-cente">
+            <a href="#" data-toggle="modal" data-target="#supportmodel">
+                <div class="icon"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="text">
+                    <h5 class="headers">Create a ticket</h5>
+                </div>
+            </a>
+        </div>
+            <div class="orders mt-4">
+                    <div class="d_mode_">
+                        <div class="card">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-warning">
+                                        <tr>
+                                            <th scope="col">Ticket Number#</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Subject</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Options</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>     
+                                        <tr>
+                                            <th scope="row">123456</th>
+                                            <td>22/05/2021</td>
+                                            <td>vicky sharma</td>
+                                            <td>500.00</td>
+                                            <td><a href="#">View Details</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                <div class="m_mode_">
+                    <div class="card">
+                        <div class="order_list">
+                            <p><b>Ticket Number#:</b> 1234569</p>
+                            <p><b>Date:</b> 1234569</p>
+                            <p><b>Subject:</b> 1234569</p>
+                            <p><b>Status:</b> 1234569</p>
+                            <p><a href="">View Details</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="supportmodel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create ticket</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="email" class="form-control" id="subject" name="subject" placeholder="Enter Subject for ticket">
+                        </div>
+                        <div class="form-group">
+                            <label for="ticket_desc">Provide a detailed description *</label>
+                            <textarea class="form-control" id="ticket_desc" name="ticket_desc" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="ticket_file" >Any File</label>
+                            <input type="file" class="form-control" id="ticket_file" name="ticket_file">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

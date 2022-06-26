@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="account.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="top-nav">
+            <div class="logo">
+                <a href="" class="logo"><img src="img/logo-removebg-preview.png" alt=""></a>
+            </div>
+            <form action="" class="nav-form">
+                <input type="text" name="" id="" placeholder="Search...">
+                <button type="search"><i class="fas fa-search"></i> <span class="search"> search</span></button>
+            </form>
+            <div class="top-nav-items">
+                <div class="item">
+                    <a href="">sdfsfsdd</a>
+                    <span id="sign">Signin <i class="fas fa-caret-down"></i>
+                        <ul class="submenu">
+                            <li><a href="">Your Account</a></li>
+                            <li><a href="">Your Order</a> </li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="chart item">
+                    <a class="" href=""><i class="fas fa-cart-plus"></i> Chart</a>
+                    <small class="chart_number">2</small>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="second-nav">
+        <ul>
+            <li class="nav-items"><a href="">Home</a></li>
+            <li class="nav-items"><a href="">All Catagorie</a></li>
+            <li class="nav-items"><a href="">All Brands</a></li>
+            <li class="nav-items"><a href="">Coupons</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h2>Account</h2>
+            <div class="addresses_form">
+               <div class="card">
+                <form action="">
+                    <div class="add_new_section">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="name">Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="mobile">Mobile <span class="text-danger">*</span></label>
+                                    <input type="number" class="form-control" name="mobile" id="mobile" placeholder="10-digit mobile number"
+                                        required>
+                                </div>
+                    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="pincode">Pin/Zip code</label>
+                                    <input type="text" class="form-control" name="pincode" placeholder="Pincode" id="pincode">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="city">City/Town <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="city" id="city" placeholder="City/Town" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <div class="form-group">
+                                <label for="flate">Flate/House No./Building/Comapany/Apartment <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="address_one" id="flate" placeholder="Address" required>
+                            </div>
+                        </div>
+                        <div class="address_two">
+                            <div class="form-group">
+                                <label for="area">Area/Colony/Sector/Village</label>
+                                <input type="text" class="form-control" name="address_two" id="area" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="landmark">Landmark</label>
+                                    <input type="text" class="form-control" name="landmark" id="landmark"
+                                        placeholder="E.g. Near Ghati Chock">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="district">District <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="district" placeholder="District" id="district" required>
+                            </div>
+                        </div>
+                        <p class="mb-2">Address Type <span class="text-danger">*</span></p>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-check">
+                                    <input type="radio" name="address_type" id="home" value="HOME" required>
+                                    <label class="form-check-label" for="home">
+                                        Home (Delivery between 7 AM - 9 PM)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-check">
+                                    <input type="radio" name="address_type" id="work" value="WORK" required>
+                                    <label class="form-check-label" for="work">
+                                        Work (Delivery between 10 AM - 5 PM)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mt-3 ml-2">
+                                <button class="btn btn-warning">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="before-footer">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 f-b-item">
+                    <div>
+                        <img src="icons-payment.png" alt="">
+                    </div>
+                    <div>
+                        <p>Secure Payment</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 f-b-item">
+                    <div>
+                        <img src="icons-delivery.png" alt="">
+                    </div>
+                    <div>
+                        <p>On time delivey</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 f-b-item">
+                    <div>
+                        <img src="icons-customer-service.png" alt="">
+                    </div>
+                    <div>
+                        <p>Excellent Customer Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

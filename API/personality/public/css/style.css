@@ -1,0 +1,36 @@
+body{
+  text-align: center;
+  background-color: #007892;
+  font-family: 'Squada One', cursive;
+}
+
+.middle{
+  border: 5px solid black;
+  margin: 20px 250px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #63b7af;
+  color: #fff;
+}
+
+input{
+  background: #00a1ab;
+  color: white;
+  border: none;
+  margin-bottom: 20px;
+}
+
+::placeholder{
+  color: #fff;
+  padding-left:10px;
+  font-size: 15px;
+}
+
+.btn{
+  margin-top: 20px;
+}
+
+.btn:hover{
+  background:#00a1ab;
+  color:#fff; 
+}

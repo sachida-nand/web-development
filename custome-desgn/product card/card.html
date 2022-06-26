@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style>
+           .productt a:hover{
+                text-decoration: none;
+            }
+
+            .productt{
+                margin-left: 12px;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-gap: 1em;
+            }
+            .productt .card{
+                text-align: center;
+                width: 270px;
+                /* height: 360px; */
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                transition: transform .3s;
+            }
+
+            .productt .card:hover{
+                transform: scale(1.1);
+            }
+
+            .productt .pruct{
+                padding: 15px 40px;
+            }
+
+            .productt .card .product-img{
+                width: 270px;
+                height: 210px;
+                margin: auto;
+            }
+
+            .productt .card .product-img img{
+                width: 100%;
+                height: 100%;
+                transition: transform .3s;
+            }
+
+            .productt .card .product-img img:hover{
+                transform: scale(1.1);
+            }
+
+            .productt .card .product-info h4{
+                font-size: 18px;
+                margin:15px 0 0;
+                color: rgb(102, 97, 107);
+            }
+
+            .productt .card .price{
+                display: flex;
+                justify-content: space-around;
+                padding: 0 70px;
+            }
+
+            .productt .card .btnn button{
+                border: none;
+                outline: none;
+                padding: 10px 0;
+                color: #fff;
+                margin-top: 10px;
+                margin-bottom: 0;
+                width: 100%;
+                background-color: red;
+                cursor: pointer;
+            }
+
+            .productt .card .btnn button:hover{
+                 background-color: rgb(25, 0, 255);
+            }
+
+            @media (max-width:1224px) {
+                 .productt{
+                  grid-template-columns: repeat(4, 1fr);
+            }
+                .productt .card{
+                width: 160px;
+                height: 260px;
+            }
+
+            .productt .pruct{
+                padding: 15px 10px;
+            }
+
+            .productt .card .product-info h4{
+                font-size: 12px;
+                margin:10px 0 0;
+            }
+            .productt .card .product-img{
+                width: 160px;
+                margin: auto;
+            }
+
+            .productt .card .product-img img{
+                width: 100%;
+                height: 140px;
+                transition: transform .3s;
+            }
+            }
+            .productt .card .price{
+                padding: 0 25px 0;
+            }
+
+            @media (max-width:786px) {
+                 .productt{
+                      margin-left:0;
+                  grid-template-columns: repeat(3, 1fr);
+            }
+                .productt .card{
+                
+                width: 160px;
+                height: 260px;
+            }
+
+            .productt .pruct{
+                padding: 15px 10px;
+            }
+
+            .productt .card .product-info h4{
+                font-size: 12px;
+                margin:10px 0 0;
+            
+            }
+            .productt .card .product-img{
+                width: 160px;
+                margin: auto;
+            }
+
+            .productt .card .product-img img{
+                width: 100%;
+                height: 140px;
+                transition: transform .3s;
+            }
+            }
+            .productt .card .price{
+                padding: 0 25px 0;
+            }
+            @media (max-width:430px) {
+                 .productt{
+                  margin-left:0;
+                  grid-template-columns: repeat(2, 1fr);
+            }
+                .productt .card{
+                width: 160px;
+                height: 260px;
+                overflow: hidden;
+            }
+
+            .productt .pruct{
+                padding: 15px 10px;
+            }
+
+            .productt .card .product-info h4{
+                font-size: 12px;
+                margin:10px 0 0;
+                color: rgb(102, 97, 107);
+            }
+            .productt .card .product-img{
+                width: 160px;
+                margin: auto;
+            }
+
+            .productt .card .product-img img{
+                width: 100%;
+                height: 140px;
+                transition: transform .3s;
+            }
+            }
+            .productt .card .price{
+                padding: 0 25px 0;
+            }
+        </style>
+</head>
+<body>
+    <div class="container-fluid productt mt-5">
+                    <div class="pruc">
+                    <a href="">
+                        <div class="card">
+                            <div class="product-img">
+                                <img src="2.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4>Lorem ipsum dolffffffffffffff, sit amet consectetur </h4>
+                                <div class="price">
+                                    <h4 style="text-decoration: line-through;">&#8377; 120</h4>
+                                    <h4>&#8377; 120</h4>
+                                </div>
+                            </div>
+                            <div class="btnn">
+                                <button type="button">Add To Card</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    <div class="pruc">
+                    <a href="">
+                        <div class="card">
+                            <div class="product-img">
+                                <img src="2.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4 id="desc">hjfdolor, sit amet consectetur </h4>
+                                <div class="price">
+                                    <h4 style="text-decoration: line-through;">&#8377; 120</h4>
+                                    <h4>&#8377; 120</h4>
+                                </div>
+                            </div>
+                            <div class="btnn">
+                                <button type="button">Add To Card</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    <div class="pruc">
+                    <a href="">
+                        <div class="card">
+                            <div class="product-img">
+                                <img src="2.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4>Lorem ipsum dolor, sit amet consectetur </h4>
+                                <div class="price">
+                                    <h4 style="text-decoration: line-through;">&#8377; 120</h4>
+                                    <h4>&#8377; 120</h4>
+                                </div>
+                            </div>
+                            <div class="btnn">
+                                <button type="button">Add To Card</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    <div class="pruc">
+                    <a href="">
+                        <div class="card">
+                            <div class="product-img">
+                                <img src="2.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4>Lorem ipsum dolor, sit amet consectetur </h4>
+                                <div class="price">
+                                    <h4 style="text-decoration: line-through;">&#8377; 120</h4>
+                                    <h4>&#8377; 120</h4>
+                                </div>
+                            </div>
+                            <div class="btnn">
+                                <button type="button">Add To Card</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    <div class="pruc">
+                    <a href="">
+                        <div class="card">
+                            <div class="product-img">
+                                <img src="2.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4>Lorem ipsum dolor, sit amet consectetur </h4>
+                                <div class="price">
+                                    <h4 style="text-decoration: line-through;">&#8377; 120</h4>
+                                    <h4>&#8377; 120</h4>
+                                </div>
+                            </div>
+                            <div class="btnn">
+                                <button type="button">Add To Card</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!-- </div>
+        </div> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <script>
+        //    var desc =  document.querySelector('#desc');
+
+        // //    for(var i =0; i<desc.length; i++){
+        // //        console.log(i);
+        // //    }
+        // //    console.log(length(desc));
+        //    var after = document.querySelector('#desc').innerHTML.substring(0, 200);
+
+        //    desc.innerHTML = after+'...';
+        </script>
+</body>
+</html>

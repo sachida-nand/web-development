@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.burger{
+    position: fixed;
+    right: 30px;
+    top: 45px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 1; 
+}
+
+.burger div{
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px;
+    transform: all 0.3s ease;
+    text-align: center;
+}
+
+.active .line1{
+    transform: rotate(-45deg) translate(-9px,5px);
+}
+.active .line2{
+    opacity: 0;
+}
+.active .line3{
+    transform: rotate(46deg) translate(-9px,-5px);
+}
+.overlay{
+    position: fixed;
+    right: 30px;
+    top: 40px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background:#edfcfd;
+    transition: transform 0.5s;
+}
+
+.burger, .overlay{
+    display: none;
+}
+.overlay.active{
+    transform: scale(100,100);
+}
+
+.scroll-nav{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    visibility: hidden;  
+}
+
+.scroll-nav.active{
+    visibility: visible;
+    transition-delay: 0.2s;
+}
+
+.scroll-nav ul{
+   position: fixed;
+   top: 15%;
+   right: 10%;
+   margin: 0;
+   padding: 0;
+}
+
+.scroll-nav ul li{
+    list-style: none;
+}
+
+.scroll-nav ul li a{
+    position: relative;
+    font-size: 50px;
+    color: #555555;
+    margin: 15px 0;
+    display: block;
+    font-size: bold;
+    text-decoration: none;
+}
+
+.scroll-nav ul li a:hover{
+    color:#59ffb4;
+}
+
+.section1{
+    width: 100%;
+    height: 100vh;
+    background: red;
+}
+
+.section2{
+    width: 100%;
+    height: 100vh;
+    background: blue;
+}
